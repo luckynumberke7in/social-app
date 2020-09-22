@@ -1,3 +1,4 @@
 {
-	"mongoURI": "mongodb+srv://ke7in:ke7in@sandboxcluster.08ukb.mongodb.net/<dbname>?retryWrites=true&w=majority"
+	"mongoURI": "mongodb+srv://ke7in:ke7in@sandboxcluster.08ukb.mongodb.net/<dbname>?retryWrites=true&w=majority",
+	"jwtSecret": "mysecrettoken"
 }

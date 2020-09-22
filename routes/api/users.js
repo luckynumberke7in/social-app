@@ -1,5 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const jwt = require('jsonwebtoken');
+const config = require('config');
 const { check, validationResult } = require('express-validator');
 // 'express-validator/check' was depreciated above
 
@@ -52,12 +54,25 @@ router.post(
 			user.password = await bcrypt.hash(password, salt);
 			// save user
 			await user.save();
+			
+			// get payload for webtoken
+			const payload = {
+				user: {
+					id: user.id
+				}
+			}
+			// callback function returning error or verified json webtoken
+			jwt.sign(
+				payload, 
+				config.get('jwtSecret'),
+				{ expiresIn: 360000 },
+				// change to 3600 after testing is done
+				(err, token) => {
+					if(err) throw err;
+					res.json({ token })
+				}
+			);
 
-			
-			
-			// return json webtoken
-			
-			res.send('User registered');
 		} catch(err) {
 			console.error(err.message);
 			res.status(500).send('Server Error');

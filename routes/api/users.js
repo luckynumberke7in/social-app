@@ -22,6 +22,7 @@ router.post(
 		// if errors exist, send bad request(400) w.errors array
 		const errors = validationResult(req);
 		if(!errors.isEmpty()) {
+			// make sure to add return before res.status() if it's not the last one being sent (will throw an error otherwise)
 			return res.status(400).json({ errors: errors.array() });
 		}
 		const { name, password, email } = req.body;
@@ -29,7 +30,7 @@ router.post(
 			// see if user exists
 			let user = await User.findOne( { email } );
 			if(user) {
-				res.status(400).json({ errors: [{ msg: 'User already exists' }] });
+				return res.status(400).json({ errors: [{ msg: 'User already exists' }] });
 			}
 			// get user gravatar
 			const avatar = gravatar.url(email, {

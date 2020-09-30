@@ -23,16 +23,20 @@ router.post(
 	async (req, res) => {
 		// if errors exist, send bad request(400) w.errors array
 		const errors = validationResult(req);
+		
 		if(!errors.isEmpty()) {
 			// make sure to add return before res.status() if it's not the last one being sent (will throw an error otherwise)
 			return res.status(400).json({ errors: errors.array() });
 		}
-		const { name, password, email } = req.body;
+		const { name, email, password } = req.body;
+
 		try {
 			// see if user exists
 			let user = await User.findOne( { email } );
+
 			if(user) {
-				return res.status(400).json({ errors: [{ msg: 'User already exists' }] });
+				return res.status(400)
+				.json({ errors: [{ msg: 'User already exists' }] });
 			}
 			// get user gravatar
 			const avatar = gravatar.url(email, {
@@ -51,7 +55,13 @@ router.post(
 			// encrypt password
 			const salt = await bcrypt.genSalt(10);
 
+			console.log(salt);
+			console.log(password);
+
 			user.password = await bcrypt.hash(password, salt);
+
+			console.log(user.password);
+
 			// save user
 			await user.save();
 			
@@ -61,6 +71,7 @@ router.post(
 					id: user.id
 				}
 			}
+
 			// callback function returning error or verified json webtoken
 			jwt.sign(
 				payload, 

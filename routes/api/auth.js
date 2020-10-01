@@ -50,8 +50,6 @@ router.post(
 		try {
 			// see if user exists
 			let user = await User.findOne({ email });
-			console.log(user); // returns correct user w. all info (except encrypted password)
-			console.log(user.password); // undefined....WHY?
 
 			if (!user) {
 				return res

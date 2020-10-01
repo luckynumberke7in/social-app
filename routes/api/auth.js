@@ -8,7 +8,6 @@ const { check, validationResult } = require('express-validator');
 
 const User = require('../../models/User');
 
-
 // @route 			GET api/auth
 // @description 	Test Route
 // @access 			Public
@@ -19,7 +18,7 @@ router.get('/', auth, async (req, res) => {
 		const user = await User.findById(req.user.id).select('-password');
 		// '-password' leaves password out
 		res.json(user);
-	} catch(err) {
+	} catch (err) {
 		console.error(err.message);
 		res.status(500).send('Server Error');
 	}
@@ -29,19 +28,19 @@ router.get('/', auth, async (req, res) => {
 // @description 	Authenticate user + get token
 // @access 			Public
 
-
 // user and password validator
 router.post(
-	'/', [
+	'/',
+	[
 		check('email', 'Please include a valid email').isEmail(),
-		check('password', 'Password required').exists()
-	], 
+		check('password', 'Password required').exists(),
+	],
 	// asynchronous callback receiving input email and password, verifies against database w. encryption
 	async (req, res) => {
 		// if errors exist, send bad request(400) w.errors array
 		const errors = validationResult(req);
 
-		if(!errors.isEmpty()) {
+		if (!errors.isEmpty()) {
 			return res.status(400).json({ errors: errors.array() });
 		}
 
@@ -50,44 +49,44 @@ router.post(
 
 		try {
 			// see if user exists
-			let user = await User.findOne( { email } );
+			let user = await User.findOne({ email });
 			console.log(user); // returns correct user w. all info (except encrypted password)
 			console.log(user.password); // undefined....WHY?
 
-			if(!user) {
-				return res.status(400)
-				.json({ errors: [{ msg: 'Invalid username / password' }] });
+			if (!user) {
+				return res
+					.status(400)
+					.json({ errors: [{ msg: 'Invalid username / password' }] });
 			}
 			// compare input credentials - username and password
 			const isMatch = await bcrypt.compare(password, user.password);
 
-			if(!isMatch) {
-				return res.status(400)
+			if (!isMatch) {
+				return res
+					.status(400)
 					.json({ errors: [{ msg: 'Invalid username / password' }] });
 			} // use same error msg for both username and password
-
 
 			// get payload for webtoken
 			const payload = {
 				user: {
-					id: user.id
-				}
+					id: user.id,
+				},
 			};
 			// callback function returning error or verified json webtoken
 			jwt.sign(
-				payload, 
+				payload,
 				config.get('jwtSecret'),
 				{ expiresIn: 360000 },
 				// change to 3600 after testing is done
 				(err, token) => {
-					if(err) throw err;
-					res.json({ token })
+					if (err) throw err;
+					res.json({ token });
 				}
 			);
-
-		} catch(err) {
+		} catch (err) {
 			console.error(err.message);
-			res.status(500).send([ 'Server Error', err.message ]);
+			res.status(500).send(['Server Error', err.message]);
 		}
 	}
 );

@@ -16,7 +16,9 @@ router.get('/me', auth, async (req, res) => {
 		}).populate('user', ['name', 'avatar']);
 
 		if (!profile) {
-			return res.status(400).json({ msg: 'No user profile exists' });
+			return res
+				.status(400)
+				.json({ msg: 'No user profile exists, but you can make one =P' });
 		}
 
 		res.json(profile);
@@ -109,5 +111,51 @@ router.post(
 		}
 	}
 );
+
+// @route 			GET api/profile
+// @description 	Get all user profiles
+// @access 			Public
+
+// takes you to a directory of ALL profiles
+router.get('/', async (req, res) => {
+	try {
+		const profiles = await Profile.find().populate('user', [
+			'name',
+			'avatar',
+		]);
+		res.json(profiles);
+	} catch (err) {
+		console.error(err.message);
+		res.status(500).send('Server Error');
+	}
+});
+
+// @route 			GET api/profile/user/:user_id
+// @description 	Get target profile by user ID
+// @access 			Public
+
+// takes you to a user's profile with /user/id
+// *  you could customize this like facebook and other sites
+// *  upon creating a profile, it could ask you to register a handle
+// *  and check against db, etc.   --   add this functionality later
+router.get('/user/:user_id', async (req, res) => {
+	try {
+		const profile = await Profile.findOne({
+			user: req.params.user_id,
+		}).populate('user', ['name', 'avatar']);
+
+		if (!profile) {
+			return res.status(400).json({ msg: "Dang, they didn't join yet =[" });
+		}
+
+		res.json(profile);
+	} catch (err) {
+		console.error(err.message);
+		if (err.kind == 'ObjectId') {
+			return res.status(400).json({ msg: "Dang, they didn't join yet =[" });
+		}
+		res.status(500).send('Server Error');
+	}
+});
 
 module.exports = router;

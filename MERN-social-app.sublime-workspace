@@ -57,7 +57,7 @@
 			"file": "routes/api/profile.js",
 			"settings":
 			{
-				"buffer_size": 8319,
+				"buffer_size": 8336,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -127,20 +127,24 @@
 		"selected_items":
 		[
 			[
-				"term",
-				"Terminus: Open Default Shell in Panel"
-			],
-			[
 				"git push",
 				"Git: Push Current Branch"
 			],
 			[
-				"git quick",
+				"quick",
 				"Git: Quick Commit (repo)"
 			],
 			[
 				"git add",
 				"Git: Add All"
+			],
+			[
+				"term",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"git quick",
+				"Git: Quick Commit (repo)"
 			],
 			[
 				"git quic",
@@ -149,10 +153,6 @@
 			[
 				"git pus",
 				"Git: Push Current Branch"
-			],
-			[
-				"quick",
-				"Git: Quick Commit (repo)"
 			],
 			[
 				"git pu",
@@ -364,7 +364,7 @@
 	],
 	"find":
 	{
-		"height": 28.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -378,6 +378,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"newExp",
 			"location",
 			"company",
 			"school",
@@ -653,15 +654,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8319,
+						"buffer_size": 8336,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8151,
-								8151
+								5730,
+								5730
 							]
 						],
 						"settings":
@@ -674,8 +675,8 @@
 								{
 									"1":
 									[
-										8200,
-										8201
+										5756,
+										5757
 									]
 								},
 								"icon":
@@ -690,8 +691,8 @@
 								{
 									"1":
 									[
-										7896,
-										7897
+										5598,
+										5599
 									]
 								},
 								"unmatched":
@@ -700,21 +701,6 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -725,36 +711,51 @@
 								"bh_square_open",
 								"bh_square_close",
 								"bh_square_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
 							],
 							"color_scheme": "Packages/JavaScript Ultimate/themes/Tron.tmTheme",
 							"git_gutter_is_enabled": true,
@@ -764,7 +765,7 @@
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 6384.0,
+						"translation.y": 4368.8,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1253,7 +1254,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -1322,7 +1323,7 @@
 	"project": "MERN-social-app.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1367,7 +1368,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 138.0,
 	"status_bar_visible": true,
 	"template_settings":

@@ -25,7 +25,7 @@ router.get('/', auth, async (req, res) => {
 });
 
 // @route 			POST api/auth
-// @description 	Authenticate user + get token
+// @description 	Authenticate user + get token (Log user in)
 // @access 			Public
 
 // user and password validator
@@ -45,7 +45,6 @@ router.post(
 		}
 
 		const { email, password } = req.body;
-		console.log(password);
 
 		try {
 			// see if user exists

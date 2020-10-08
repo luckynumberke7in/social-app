@@ -115,8 +115,8 @@ router.put('/like/:id', auth, async (req, res) => {
 
 		// check if post has been liked by this user
 		if (
-			post.likes.filter((like) => like.user.toString() === req.user.id)
-				.length > 0
+			post.likes.filter((like) => like.user.toString() === req.user.id).length >
+			0
 		) {
 			// if post is already liked by this user, unlike it.
 			const removeIndex = post.likes

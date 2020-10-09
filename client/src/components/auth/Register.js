@@ -1,7 +1,11 @@
 import React, { Fragment, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { setAlert } from '../../actions/alert';
 
-const Register = () => {
+// destructures setAlert from props obj that will feed into Register
+const Register = ({ setAlert }) => {
   // sets default state for fields inside useState(), connects user input
   const [formData, setFormDate] = useState({
     name: '',
@@ -20,7 +24,7 @@ const Register = () => {
   const onSubmit = async (e) => {
     e.preventDefault();
     if (password !== password2) {
-      console.log('Passwords do not match');
+      setAlert('Passwords do not match', 'danger');
     } else {
       console.log('Creation Successful');
     }
@@ -87,4 +91,11 @@ const Register = () => {
   );
 };
 
-export default Register;
+Register.propTypes = {
+  setAlert: PropTypes.func.isRequired,
+};
+
+// sets up redux to handle state changes
+// inside connect you choose what state redux will alter, then you list the actions that this componenet will use inside {}.
+// inside it's own () after connect() is the 'presentational' component. This allows the page to load the contents inside Register.
+export default connect(null, { setAlert })(Register);

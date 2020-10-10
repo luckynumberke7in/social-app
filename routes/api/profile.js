@@ -122,10 +122,7 @@ router.post(
 // takes you to a directory of ALL profiles
 router.get('/', async (req, res) => {
 	try {
-		const profiles = await Profile.find().populate('user', [
-			'name',
-			'avatar',
-		]);
+		const profiles = await Profile.find().populate('user', ['name', 'avatar']);
 		res.json(profiles);
 	} catch (err) {
 		console.error(err.message);

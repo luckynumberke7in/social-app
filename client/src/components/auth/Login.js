@@ -1,7 +1,11 @@
 import React, { Fragment, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { login } from '../../actions/auth';
 
-const Login = () => {
+// add / destructure login as prop in Login arguments
+const Login = ({ login, isAuthenticated }) => {
   // sets default state for fields inside useState(), connects user input
   const [formData, setFormDate] = useState({
     email: '',
@@ -10,15 +14,20 @@ const Login = () => {
   // destructure for readability
   const { email, password } = formData;
 
-  // create universal event handler updating state for text fields
+  // update state for text field when user types
   const onChange = (e) =>
     setFormDate({ ...formData, [e.target.name]: e.target.value });
 
-  // click / submit event handler
+  // click / submit event handler to login
   const onSubmit = async (e) => {
     e.preventDefault();
-    console.log('Success');
+    login(email, password);
   };
+
+  // redirect to user page if logged in
+  if (isAuthenticated) {
+    return <Redirect to="/dashboard" />;
+  }
 
   return (
     <Fragment>
@@ -57,4 +66,13 @@ const Login = () => {
   );
 };
 
-export default Login;
+Login.propTypes = {
+  login: PropTypes.func.isRequired,
+  isAuthenticated: PropTypes.bool,
+};
+
+const mapStateToProps = (state) => ({
+  isAuthenticated: state.auth.isAuthenticated,
+});
+// use connect w/ no initial state and pass in { props } and (visual component)
+export default connect(mapStateToProps, { login })(Login);

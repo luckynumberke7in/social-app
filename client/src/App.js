@@ -17,11 +17,6 @@ import './App.css';
 import { Provider } from 'react-redux';
 import store from './store';
 
-// get user token if there is one
-// if (localStorage.token) {
-//   setAuthToken(localStorage.token);
-// }
-
 const App = () => {
   // hook to get user token once per load
   useEffect(() => {

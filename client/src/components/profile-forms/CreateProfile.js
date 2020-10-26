@@ -1,21 +1,23 @@
-import React, { useState, Fragment } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import React, { useState, Fragment } from "react";
+import { Link, withRouter } from "react-router-dom";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { createProfile } from "../../actions/profile";
 
-function CreateProfile(props) {
+function CreateProfile({ createProfile, history }) {
   const [formData, setFormData] = useState({
-    company: '',
-    website: '',
-    location: '',
-    status: '',
-    skills: '',
-    githubusername: '',
-    bio: '',
-    twitter: '',
-    facebook: '',
-    linkedin: '',
-    youtube: '',
-    intagram: '',
+    company: "",
+    website: "",
+    location: "",
+    status: "",
+    skills: "",
+    githubusername: "",
+    bio: "",
+    twitter: "",
+    facebook: "",
+    linkedin: "",
+    youtube: "",
+    intagram: "",
   });
 
   const [displaySocialInputs, toggleSocialInputs] = useState(false);
@@ -38,6 +40,11 @@ function CreateProfile(props) {
   const onChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
+  const onSubmit = (e) => {
+    e.preventDefault();
+    createProfile(formData, history);
+  };
+
   return (
     <Fragment>
       <h1 className="large text-primary">Create Your Profile</h1>
@@ -46,7 +53,7 @@ function CreateProfile(props) {
         profile stand out
       </p>
       <small>* = required field</small>
-      <form className="form">
+      <form className="form" onSubmit={(e) => onSubmit(e)}>
         <div className="form-group">
           <select name="status" value={status} onChange={(e) => onChange(e)}>
             <option value="0">* Select Professional Status</option>
@@ -213,6 +220,9 @@ function CreateProfile(props) {
   );
 }
 
-CreateProfile.propTypes = {};
+CreateProfile.propTypes = {
+  createProfile: PropTypes.func.isRequired,
+};
 
-export default CreateProfile;
+// withRouter() allows history obj to be passed to action
+export default connect(null, { createProfile })(withRouter(CreateProfile));

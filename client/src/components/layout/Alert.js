@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
+import React from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
 
 // pull alerts prop out, then if alerts aren't null or 0, display in jsx.
 const Alert = ({ alerts }) =>

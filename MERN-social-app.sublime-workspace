@@ -110,7 +110,7 @@
 			"file": "client/src/components/profile-forms/AddExperience.js",
 			"settings":
 			{
-				"buffer_size": 3304,
+				"buffer_size": 3409,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -119,7 +119,7 @@
 			"file": "client/src/App.js",
 			"settings":
 			{
-				"buffer_size": 2227,
+				"buffer_size": 2441,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -128,7 +128,8 @@
 			"file": "client/src/components/profile-forms/AddEducation.js",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 3478,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -356,6 +357,7 @@
 		"height": 380.0,
 		"history":
 		[
+			"git branch",
 			"git add .",
 			"console.log(user.password)",
 			"git add .",
@@ -390,6 +392,7 @@
 	],
 	"file_history":
 	[
+		"/C/Users/kevin/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
 		"/C/Users/kevin/Desktop/mern-social/client/src/components/layout/Navbar.js",
 		"/C/Users/kevin/Desktop/mern-social/client/src/components/layout/Landing.js",
 		"/C/Users/kevin/Desktop/mern-social/client/src/components/routing/PrivateRoute.js",
@@ -411,7 +414,6 @@
 		"/C/Users/kevin/Desktop/mern-social/routes/api/auth.js",
 		"/C/Users/kevin/Desktop/mern-social/client/src/actions/types.js",
 		"/C/Users/kevin/Desktop/mern-social/client/src/components/dashboard/DashboardActions.js",
-		"/C/Users/kevin/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
 		"/C/Users/kevin/Desktop/mern-social/client/src/components/layout/Spinner.js",
 		"/C/Users/kevin/Desktop/mern-social/client/src/reducers/auth.js",
 		"/C/Users/kevin/Desktop/mern-social/client/src/utils/setAuthToken.js",
@@ -511,6 +513,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Experience",
+			"location",
+			"company",
+			"title",
+			"Experience",
 			"EditProfile",
 			"a",
 			"GET",
@@ -587,7 +594,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -696,7 +703,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -940,7 +947,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -1684,8 +1691,8 @@
 						"selection":
 						[
 							[
-								418,
-								418
+								352,
+								352
 							]
 						],
 						"settings":
@@ -1699,8 +1706,8 @@
 								{
 									"1":
 									[
-										528,
-										529
+										382,
+										383
 									]
 								},
 								"icon":
@@ -1715,8 +1722,8 @@
 								{
 									"1":
 									[
-										417,
-										418
+										326,
+										327
 									]
 								},
 								"unmatched":
@@ -1735,31 +1742,36 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -1770,11 +1782,6 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -1792,10 +1799,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1433.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -2065,7 +2072,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -2074,7 +2081,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3304,
+						"buffer_size": 3409,
 						"regions":
 						{
 							"rb_level0":
@@ -2119,40 +2126,40 @@
 										258
 									],
 									[
-										263,
-										264
+										284,
+										285
 									],
 									[
-										268,
-										269
+										289,
+										290
 									],
 									[
-										3160,
-										3161
+										3265,
+										3266
 									],
 									[
-										3190,
-										3191
+										3295,
+										3296
 									],
 									[
-										3236,
-										3237
+										3341,
+										3342
 									],
 									[
-										3262,
-										3263
+										3367,
+										3368
 									],
 									[
-										3286,
-										3287
+										3391,
+										3392
 									],
 									[
-										3287,
-										3288
+										3392,
+										3393
 									],
 									[
-										3301,
-										3302
+										3406,
+										3407
 									]
 								],
 								"scope": "level0.rb"
@@ -2163,92 +2170,84 @@
 								"regions":
 								[
 									[
-										278,
-										279
+										258,
+										259
 									],
 									[
-										300,
-										301
+										283,
+										284
 									],
 									[
-										312,
-										313
+										299,
+										300
 									],
 									[
-										435,
-										436
+										321,
+										322
 									],
 									[
-										447,
-										448
+										333,
+										334
 									],
 									[
-										478,
-										479
+										456,
+										457
 									],
 									[
-										490,
-										491
+										468,
+										469
 									],
 									[
-										496,
-										497
+										499,
+										500
 									],
 									[
-										508,
-										509
+										511,
+										512
 									],
 									[
-										567,
-										568
+										517,
+										518
 									],
 									[
-										601,
-										602
+										529,
+										530
 									],
 									[
-										603,
-										604
+										588,
+										589
 									],
 									[
-										623,
-										624
+										622,
+										623
 									],
 									[
-										672,
-										673
+										624,
+										625
 									],
 									[
-										695,
-										696
+										644,
+										645
 									],
 									[
-										697,
-										698
+										693,
+										694
 									],
 									[
-										702,
-										703
+										706,
+										707
 									],
 									[
-										759,
-										760
+										3262,
+										3263
 									],
 									[
-										772,
-										773
+										3374,
+										3375
 									],
 									[
-										3157,
-										3158
-									],
-									[
-										3269,
-										3270
-									],
-									[
-										3285,
-										3286
+										3390,
+										3391
 									]
 								],
 								"scope": "level1.rb"
@@ -2259,164 +2258,164 @@
 								"regions":
 								[
 									[
-										313,
-										314
+										334,
+										335
 									],
 									[
-										434,
-										435
+										455,
+										456
 									],
 									[
-										624,
-										625
+										645,
+										646
 									],
 									[
-										671,
-										672
+										692,
+										693
 									],
 									[
-										724,
-										725
+										1028,
+										1029
 									],
 									[
-										725,
-										726
+										1121,
+										1122
 									],
 									[
-										745,
-										746
+										1286,
+										1287
 									],
 									[
-										754,
-										755
+										1292,
+										1293
 									],
 									[
-										1078,
-										1079
+										1315,
+										1316
 									],
 									[
-										1097,
-										1098
-									],
-									[
-										1255,
-										1256
-									],
-									[
-										1261,
-										1262
-									],
-									[
-										1284,
-										1285
-									],
-									[
-										1303,
-										1304
-									],
-									[
-										1509,
-										1510
-									],
-									[
-										1517,
-										1518
+										1334,
+										1335
 									],
 									[
 										1540,
 										1541
 									],
 									[
-										1559,
-										1560
+										1548,
+										1549
 									],
 									[
-										1765,
-										1766
+										1571,
+										1572
 									],
 									[
-										1774,
-										1775
+										1590,
+										1591
 									],
 									[
-										1797,
-										1798
+										1796,
+										1797
 									],
 									[
-										1816,
-										1817
+										1805,
+										1806
 									],
 									[
-										1991,
-										1992
+										1828,
+										1829
 									],
 									[
-										1996,
-										1997
+										1847,
+										1848
 									],
 									[
-										2019,
-										2020
+										2022,
+										2023
 									],
 									[
-										2038,
-										2039
+										2027,
+										2028
 									],
 									[
-										2215,
-										2216
+										2050,
+										2051
 									],
 									[
-										2223,
-										2224
+										2069,
+										2070
 									],
 									[
-										2245,
-										2246
+										2246,
+										2247
 									],
 									[
-										2253,
-										2254
+										2254,
+										2255
 									],
 									[
-										2278,
-										2279
+										2276,
+										2277
 									],
 									[
-										2417,
-										2418
+										2284,
+										2285
 									],
 									[
-										2433,
-										2434
+										2309,
+										2310
 									],
 									[
-										2437,
-										2438
+										2448,
+										2449
 									],
 									[
-										2634,
-										2635
+										2464,
+										2465
 									],
 									[
-										2637,
-										2638
+										2468,
+										2469
 									],
 									[
-										2660,
-										2661
+										2665,
+										2666
 									],
 									[
-										2679,
-										2680
+										2668,
+										2669
 									],
 									[
-										2702,
-										2703
+										2691,
+										2692
 									],
 									[
-										2735,
-										2736
+										2710,
+										2711
+									],
+									[
+										2733,
+										2734
+									],
+									[
+										2766,
+										2767
+									],
+									[
+										2983,
+										2984
+									],
+									[
+										2995,
+										2996
+									],
+									[
+										3018,
+										3019
+									],
+									[
+										3037,
+										3038
 									]
 								],
 								"scope": "level2.rb"
@@ -2427,124 +2426,140 @@
 								"regions":
 								[
 									[
-										639,
-										640
+										660,
+										661
 									],
 									[
-										653,
-										654
+										674,
+										675
 									],
 									[
-										1079,
-										1080
+										1029,
+										1030
 									],
 									[
-										1081,
-										1082
+										1031,
+										1032
 									],
 									[
-										1094,
-										1095
+										1036,
+										1037
 									],
 									[
-										1096,
-										1097
+										1120,
+										1121
 									],
 									[
-										1285,
-										1286
+										1316,
+										1317
 									],
 									[
-										1287,
-										1288
+										1318,
+										1319
 									],
 									[
-										1300,
-										1301
+										1331,
+										1332
 									],
 									[
-										1302,
-										1303
+										1333,
+										1334
 									],
 									[
-										1541,
-										1542
+										1572,
+										1573
 									],
 									[
-										1543,
-										1544
+										1574,
+										1575
 									],
 									[
-										1556,
-										1557
+										1587,
+										1588
 									],
 									[
-										1558,
-										1559
+										1589,
+										1590
 									],
 									[
-										1798,
-										1799
+										1829,
+										1830
 									],
 									[
-										1800,
-										1801
+										1831,
+										1832
 									],
 									[
-										1813,
-										1814
+										1844,
+										1845
 									],
 									[
-										1815,
-										1816
+										1846,
+										1847
 									],
 									[
-										2020,
-										2021
+										2051,
+										2052
 									],
 									[
-										2022,
-										2023
+										2053,
+										2054
 									],
 									[
-										2035,
-										2036
+										2066,
+										2067
 									],
 									[
-										2037,
-										2038
+										2068,
+										2069
 									],
 									[
-										2279,
-										2280
+										2310,
+										2311
 									],
 									[
-										2281,
-										2282
+										2312,
+										2313
 									],
 									[
-										2286,
-										2287
+										2317,
+										2318
 									],
 									[
-										2416,
-										2417
+										2447,
+										2448
 									],
 									[
-										2661,
-										2662
+										2692,
+										2693
 									],
 									[
-										2663,
-										2664
+										2694,
+										2695
 									],
 									[
-										2676,
-										2677
+										2707,
+										2708
 									],
 									[
-										2678,
-										2679
+										2709,
+										2710
+									],
+									[
+										3019,
+										3020
+									],
+									[
+										3021,
+										3022
+									],
+									[
+										3034,
+										3035
+									],
+									[
+										3036,
+										3037
 									]
 								],
 								"scope": "level3.rb"
@@ -2555,20 +2570,36 @@
 								"regions":
 								[
 									[
-										2315,
-										2316
+										1064,
+										1065
 									],
 									[
-										2350,
-										2351
+										1065,
+										1066
 									],
 									[
-										2383,
-										2384
+										1091,
+										1092
 									],
 									[
-										2399,
-										2400
+										1109,
+										1110
+									],
+									[
+										2346,
+										2347
+									],
+									[
+										2381,
+										2382
+									],
+									[
+										2414,
+										2415
+									],
+									[
+										2430,
+										2431
 									]
 								],
 								"scope": "level4.rb"
@@ -2579,12 +2610,12 @@
 								"regions":
 								[
 									[
-										2316,
-										2317
+										2347,
+										2348
 									],
 									[
-										2349,
-										2350
+										2380,
+										2381
 									]
 								],
 								"scope": "level5.rb"
@@ -2593,8 +2624,8 @@
 						"selection":
 						[
 							[
-								754,
-								754
+								0,
+								3409
 							]
 						],
 						"settings":
@@ -2606,27 +2637,12 @@
 							{
 								"close":
 								{
-									"1":
-									[
-										754,
-										755
-									]
 								},
 								"icon":
 								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/round_bracket.png",
-										"region.yellowish"
-									]
 								},
 								"open":
 								{
-									"1":
-									[
-										745,
-										746
-									]
 								},
 								"unmatched":
 								{
@@ -2644,31 +2660,36 @@
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
@@ -2679,11 +2700,6 @@
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
@@ -2702,7 +2718,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -2711,7 +2727,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2227,
+						"buffer_size": 2441,
 						"regions":
 						{
 							"rb_level0":
@@ -2744,44 +2760,44 @@
 										389
 									],
 									[
-										835,
-										836
+										903,
+										904
 									],
 									[
-										846,
-										847
+										914,
+										915
 									],
 									[
-										901,
-										902
+										969,
+										970
 									],
 									[
-										920,
-										921
+										988,
+										989
 									],
 									[
-										922,
-										923
+										990,
+										991
 									],
 									[
-										960,
-										961
+										1028,
+										1029
 									],
 									[
-										975,
-										976
+										1043,
+										1044
 									],
 									[
-										976,
-										977
+										1044,
+										1045
 									],
 									[
-										981,
-										982
+										1049,
+										1050
 									],
 									[
-										2203,
-										2204
+										2417,
+										2418
 									]
 								],
 								"scope": "level0.rb"
@@ -2792,28 +2808,28 @@
 								"regions":
 								[
 									[
-										938,
-										939
+										1006,
+										1007
 									],
 									[
-										957,
-										958
+										1025,
+										1026
 									],
 									[
-										1036,
-										1037
+										1104,
+										1105
 									],
 									[
-										1084,
-										1085
+										1152,
+										1153
 									],
 									[
-										1230,
-										1231
+										1298,
+										1299
 									],
 									[
-										2200,
-										2201
+										2414,
+										2415
 									]
 								],
 								"scope": "level1.rb"
@@ -2824,92 +2840,100 @@
 								"regions":
 								[
 									[
-										1037,
-										1038
+										1105,
+										1106
 									],
 									[
-										1038,
-										1039
+										1106,
+										1107
 									],
 									[
-										1043,
-										1044
+										1111,
+										1112
 									],
 									[
-										1079,
-										1080
+										1147,
+										1148
 									],
 									[
-										1082,
-										1083
+										1150,
+										1151
 									],
 									[
-										1083,
-										1084
+										1151,
+										1152
 									],
 									[
-										1252,
-										1253
+										1320,
+										1321
 									],
 									[
-										1258,
-										1259
+										1326,
+										1327
 									],
 									[
-										1358,
-										1359
+										1426,
+										1427
 									],
 									[
-										1366,
-										1367
+										1434,
+										1435
 									],
 									[
-										1510,
-										1511
+										1578,
+										1579
 									],
 									[
-										1519,
-										1520
+										1587,
+										1588
 									],
 									[
-										1575,
-										1576
+										1643,
+										1644
 									],
 									[
-										1581,
-										1582
+										1649,
+										1650
 									],
 									[
-										1648,
-										1649
+										1716,
+										1717
 									],
 									[
-										1658,
-										1659
+										1726,
+										1727
 									],
 									[
-										1778,
-										1779
+										1846,
+										1847
 									],
 									[
-										1792,
-										1793
+										1860,
+										1861
 									],
 									[
-										1924,
-										1925
+										1992,
+										1993
 									],
 									[
-										1936,
-										1937
+										2004,
+										2005
 									],
 									[
-										2070,
-										2071
+										2138,
+										2139
 									],
 									[
-										2084,
-										2085
+										2152,
+										2153
+									],
+									[
+										2285,
+										2286
+									],
+									[
+										2298,
+										2299
 									]
 								],
 								"scope": "level2.rb"
@@ -2920,12 +2944,12 @@
 								"regions":
 								[
 									[
-										1063,
-										1064
+										1131,
+										1132
 									],
 									[
-										1074,
-										1075
+										1142,
+										1143
 									]
 								],
 								"scope": "level3.rb"
@@ -2936,12 +2960,12 @@
 								"regions":
 								[
 									[
-										1072,
-										1073
+										1140,
+										1141
 									],
 									[
-										1073,
-										1074
+										1141,
+										1142
 									]
 								],
 								"scope": "level4.rb"
@@ -2950,8 +2974,8 @@
 						"selection":
 						[
 							[
-								2004,
-								2004
+								885,
+								885
 							]
 						],
 						"settings":
@@ -2963,27 +2987,12 @@
 							{
 								"close":
 								{
-									"1":
-									[
-										2200,
-										2201
-									]
 								},
 								"icon":
 								{
-									"1":
-									[
-										"Packages/BracketHighlighter/icons/round_bracket.png",
-										"region.yellowish"
-									]
 								},
 								"open":
 								{
-									"1":
-									[
-										1230,
-										1231
-									]
 								},
 								"unmatched":
 								{
@@ -2991,31 +3000,26 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
@@ -3026,26 +3030,31 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content"
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
 							],
 							"git_gutter_is_enabled": true,
 							"incomplete_sync": null,
@@ -3060,7 +3069,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -3069,31 +3078,583 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 3478,
 						"regions":
 						{
+							"rb_level0":
+							{
+								"flags": 272,
+								"regions":
+								[
+									[
+										14,
+										15
+									],
+									[
+										35,
+										36
+									],
+									[
+										58,
+										59
+									],
+									[
+										77,
+										78
+									],
+									[
+										147,
+										148
+									],
+									[
+										157,
+										158
+									],
+									[
+										186,
+										187
+									],
+									[
+										201,
+										202
+									],
+									[
+										255,
+										256
+									],
+									[
+										281,
+										282
+									],
+									[
+										286,
+										287
+									],
+									[
+										3338,
+										3339
+									],
+									[
+										3367,
+										3368
+									],
+									[
+										3412,
+										3413
+									],
+									[
+										3438,
+										3439
+									],
+									[
+										3461,
+										3462
+									],
+									[
+										3462,
+										3463
+									],
+									[
+										3475,
+										3476
+									]
+								],
+								"scope": "level0.rb"
+							},
+							"rb_level1":
+							{
+								"flags": 272,
+								"regions":
+								[
+									[
+										256,
+										257
+									],
+									[
+										280,
+										281
+									],
+									[
+										296,
+										297
+									],
+									[
+										318,
+										319
+									],
+									[
+										330,
+										331
+									],
+									[
+										457,
+										458
+									],
+									[
+										469,
+										470
+									],
+									[
+										500,
+										501
+									],
+									[
+										512,
+										513
+									],
+									[
+										518,
+										519
+									],
+									[
+										530,
+										531
+									],
+									[
+										624,
+										625
+									],
+									[
+										658,
+										659
+									],
+									[
+										660,
+										661
+									],
+									[
+										680,
+										681
+									],
+									[
+										729,
+										730
+									],
+									[
+										742,
+										743
+									],
+									[
+										3335,
+										3336
+									],
+									[
+										3445,
+										3446
+									],
+									[
+										3460,
+										3461
+									]
+								],
+								"scope": "level1.rb"
+							},
+							"rb_level2":
+							{
+								"flags": 272,
+								"regions":
+								[
+									[
+										331,
+										332
+									],
+									[
+										456,
+										457
+									],
+									[
+										681,
+										682
+									],
+									[
+										728,
+										729
+									],
+									[
+										1063,
+										1064
+									],
+									[
+										1155,
+										1156
+									],
+									[
+										1329,
+										1330
+									],
+									[
+										1336,
+										1337
+									],
+									[
+										1359,
+										1360
+									],
+									[
+										1378,
+										1379
+									],
+									[
+										1596,
+										1597
+									],
+									[
+										1603,
+										1604
+									],
+									[
+										1626,
+										1627
+									],
+									[
+										1645,
+										1646
+									],
+									[
+										1861,
+										1862
+									],
+									[
+										1874,
+										1875
+									],
+									[
+										1897,
+										1898
+									],
+									[
+										1916,
+										1917
+									],
+									[
+										2091,
+										2092
+									],
+									[
+										2096,
+										2097
+									],
+									[
+										2119,
+										2120
+									],
+									[
+										2138,
+										2139
+									],
+									[
+										2315,
+										2316
+									],
+									[
+										2323,
+										2324
+									],
+									[
+										2345,
+										2346
+									],
+									[
+										2353,
+										2354
+									],
+									[
+										2378,
+										2379
+									],
+									[
+										2517,
+										2518
+									],
+									[
+										2533,
+										2534
+									],
+									[
+										2537,
+										2538
+									],
+									[
+										2734,
+										2735
+									],
+									[
+										2737,
+										2738
+									],
+									[
+										2760,
+										2761
+									],
+									[
+										2779,
+										2780
+									],
+									[
+										2802,
+										2803
+									],
+									[
+										2835,
+										2836
+									],
+									[
+										3056,
+										3057
+									],
+									[
+										3068,
+										3069
+									],
+									[
+										3091,
+										3092
+									],
+									[
+										3110,
+										3111
+									]
+								],
+								"scope": "level2.rb"
+							},
+							"rb_level3":
+							{
+								"flags": 272,
+								"regions":
+								[
+									[
+										696,
+										697
+									],
+									[
+										710,
+										711
+									],
+									[
+										1064,
+										1065
+									],
+									[
+										1066,
+										1067
+									],
+									[
+										1071,
+										1072
+									],
+									[
+										1154,
+										1155
+									],
+									[
+										1360,
+										1361
+									],
+									[
+										1362,
+										1363
+									],
+									[
+										1375,
+										1376
+									],
+									[
+										1377,
+										1378
+									],
+									[
+										1627,
+										1628
+									],
+									[
+										1629,
+										1630
+									],
+									[
+										1642,
+										1643
+									],
+									[
+										1644,
+										1645
+									],
+									[
+										1898,
+										1899
+									],
+									[
+										1900,
+										1901
+									],
+									[
+										1913,
+										1914
+									],
+									[
+										1915,
+										1916
+									],
+									[
+										2120,
+										2121
+									],
+									[
+										2122,
+										2123
+									],
+									[
+										2135,
+										2136
+									],
+									[
+										2137,
+										2138
+									],
+									[
+										2379,
+										2380
+									],
+									[
+										2381,
+										2382
+									],
+									[
+										2386,
+										2387
+									],
+									[
+										2516,
+										2517
+									],
+									[
+										2761,
+										2762
+									],
+									[
+										2763,
+										2764
+									],
+									[
+										2776,
+										2777
+									],
+									[
+										2778,
+										2779
+									],
+									[
+										3092,
+										3093
+									],
+									[
+										3094,
+										3095
+									],
+									[
+										3107,
+										3108
+									],
+									[
+										3109,
+										3110
+									]
+								],
+								"scope": "level3.rb"
+							},
+							"rb_level4":
+							{
+								"flags": 272,
+								"regions":
+								[
+									[
+										1099,
+										1100
+									],
+									[
+										1100,
+										1101
+									],
+									[
+										1125,
+										1126
+									],
+									[
+										1143,
+										1144
+									],
+									[
+										2415,
+										2416
+									],
+									[
+										2450,
+										2451
+									],
+									[
+										2483,
+										2484
+									],
+									[
+										2499,
+										2500
+									]
+								],
+								"scope": "level4.rb"
+							},
+							"rb_level5":
+							{
+								"flags": 272,
+								"regions":
+								[
+									[
+										2416,
+										2417
+									],
+									[
+										2449,
+										2450
+									]
+								],
+								"scope": "level5.rb"
+							}
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								3024,
+								3024
 							]
 						],
 						"settings":
 						{
 							"apply_syntax_touched": true,
+							"auto_complete": false,
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
 							{
 								"close":
 								{
+									"1":
+									[
+										3036,
+										3037
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/double_quote.png",
+										"region.greenish"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										3016,
+										3017
+									]
 								},
 								"unmatched":
 								{
@@ -3101,31 +3662,26 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
@@ -3136,26 +3692,31 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content"
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
 							],
 							"git_gutter_is_enabled": true,
 							"incomplete_sync": null,
@@ -3163,13 +3724,15 @@
 							"rb_syntax": "json",
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1040.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -3208,7 +3771,7 @@
 	"menu_visible": true,
 	"output.Terminus":
 	{
-		"height": 650.0
+		"height": 196.0
 	},
 	"output.Terminus 2":
 	{
@@ -3217,6 +3780,10 @@
 	"output.Terminus 3":
 	{
 		"height": 127.0
+	},
+	"output.Terminus 4":
+	{
+		"height": 139.0
 	},
 	"output.exec":
 	{
@@ -3228,7 +3795,7 @@
 	},
 	"output.git":
 	{
-		"height": 125.0
+		"height": 632.0
 	},
 	"output.mdpopups":
 	{
